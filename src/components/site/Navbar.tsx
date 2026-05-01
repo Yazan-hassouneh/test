@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+/* eslint-disable prettier/prettier */
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logo from "@/assets/hk-logo.jpg";
 
@@ -21,15 +22,13 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-3" : "py-5"
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "py-3" : "py-5"
+        }`}
     >
       <div className={`mx-auto max-w-7xl px-6 ${scrolled ? "" : ""}`}>
         <nav
-          className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 transition-all duration-500 ${
-            scrolled ? "glass shadow-card" : "bg-transparent"
-          }`}
+          className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 transition-all duration-500 ${scrolled ? "glass shadow-card" : "bg-transparent"
+            }`}
         >
           <Link to="/" className="flex items-center gap-3 group">
             <div className="h-10 w-10 rounded-xl overflow-hidden bg-background ring-1 ring-border">
